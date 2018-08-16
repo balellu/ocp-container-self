@@ -19,6 +19,7 @@ package io.openshift.booster.service;
 public class Greeting {
 
     public static final String FORMAT = "Hello, %s!";
+    public static final String HATE = "Go Away, %s!";
 
     private final String content;
 

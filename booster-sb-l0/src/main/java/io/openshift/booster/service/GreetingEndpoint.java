@@ -32,4 +32,11 @@ public class GreetingEndpoint {
         final String message = String.format(Greeting.FORMAT, name);
         return new Greeting(message);
     }
+
+    @GET
+    @Produces("application/json")
+    public Greeting hating(@QueryParam("name") @DefaultValue("Duche") String name) {
+        final String message = String.format(Greeting.HATE, name);
+        return new Greeting(message);
+    }
 }
